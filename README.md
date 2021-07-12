@@ -10,6 +10,7 @@ A series of **ReactJS coding challenges** with a variety of difficulties. Deep d
 ### Easy 🙂
 ##### 🚀 [Rocket Ship](https://github.com/alexgurr/react-coding-challenges/tree/master/rocket-ship)
 Unnecessary re-renders, fine grained control.
+* LaunchPad.js에서 FunctionalRocket 랜더링하고 있는데,여기서의 state인 rerenderCount가 변경되어서 Rocket까지 리랜더링 되었다. 이를 방지하기 위해 FunctionalRockt를 React.memo로 감싸주어 리랜더링을 방지하였다.
 
 &nbsp;
 ### Medium 😐
