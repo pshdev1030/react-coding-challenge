@@ -26,3 +26,23 @@ None
 ## Screenshots 🌄
 &nbsp;
 ![screenshot](https://puu.sh/Fq16F/1ad6edff1b.png)
+
+
+export const FunctionalRocket =memo(()=> {
+  const [initialLaunchTime] = useState(Date.now());
+  return <RocketCore initialLaunchTime={initialLaunchTime} />;
+});
+
+```javascript
+//수정 전
+export function FunctionalRocket() {
+  const [initialLaunchTime] = useState(Date.now());
+
+  return <RocketCore initialLaunchTime={initialLaunchTime} />;
+}
+//수정 후
+export const FunctionalRocket =memo(()=> {
+  const [initialLaunchTime] = useState(Date.now());
+  return <RocketCore initialLaunchTime={initialLaunchTime} />;
+});
+```
