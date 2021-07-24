@@ -17,6 +17,9 @@ Unnecessary re-renders, fine grained control.
 ##### 🌙 [Dark Mode](https://github.com/alexgurr/react-coding-challenges/tree/master/dark-mode)
 State / shared state, DOM manipulation.
 
+* css파일이 html에 dark-mode라는 클래스에 따라 하위 태그들의 스타일이 바뀌도록 만들어져 있어서 버튼에 돔조작을 통해 이벤트를 추가하도록 하였다.
+* 다만 하고나니 직접 돔을 조작하기 보단 context api를 쓰는것이 더 적절해 보였다.
+
 ##### 🐝 Coinbee ![soon](https://badgen.net/badge/status/coming%20soon/green?icon=)
 Data visualisation and graphing. API usage.
 
