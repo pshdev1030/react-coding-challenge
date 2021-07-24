@@ -1,9 +1,15 @@
-import React from 'react';
+import {React,useCallback,useMemo} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import '../styles/_app.scss';
 
 function App() {
+
+  const onClick=useCallback(()=>{
+    let HTML=document.querySelector('html');
+    HTML.classList.toggle('dark-mode');
+  })
+
   return (
     <div className="app">
       <div className="level">
@@ -12,7 +18,7 @@ function App() {
         </div>
 
         {/* --The button that should toggle dark mode-- */}
-        <button className="app__dark-mode-btn icon level-right">
+        <button className="app__dark-mode-btn icon level-right" onClick={onClick}>
           <FontAwesomeIcon icon={faMoon} />
         </button>
 
